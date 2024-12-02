@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_statmanagment/cart_controller.dart';
 import 'my_Homepage.dart';
 
 void main() {
+  Get.put(CartController()); // Registering CartController
   runApp(const MyApp());
 }
 

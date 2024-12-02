@@ -14,28 +14,31 @@ class MyHomePage extends StatelessWidget {
         backgroundColor: Colors.pink,
         title: Text(title),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'Welcome to the Shopping Cart!',
-              style: TextStyle(fontSize: 24),
-            ),
-            const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                Get.to(() => ProductListPage());
-              },
-              child: const Text('Go to Product List'),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Get.to(() => CartPage());
-              },
-              child: const Text('Go to Cart'),
-            ),
-          ],
+      body: Container(
+        color: Colors.pink.shade50,
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              const Text(
+                'Welcome to the Shopping Cart!',
+                style: TextStyle(fontSize: 24),
+              ),
+              const SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {
+                  Get.to(() => ProductListPage());
+                },
+                child: const Text('Go to Product List'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Get.to(() => CartPage());
+                },
+                child: const Text('Go to Cart'),
+              ),
+            ],
+          ),
         ),
       ),
     );
